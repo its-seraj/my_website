@@ -66,10 +66,10 @@ const StyledPic = styled.div`
     &:hover,
     &:focus {
       outline: 0;
+      transform: translate(-4px, -4px);
 
       &:after {
-        top: 15px;
-        left: 15px;
+        transform: translate(8px, 8px);
       }
 
       .img {
@@ -106,8 +106,8 @@ const StyledPic = styled.div`
 
     &:after {
       border: 2px solid var(--green);
-      top: 20px;
-      left: 20px;
+      top: 14px;
+      left: 14px;
       z-index: -1;
     }
   }
@@ -125,16 +125,23 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
+<<<<<<< Updated upstream
+  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+=======
   const skills = [
-    'Java',
     'JavaScript (ES6+)',
-    'React',
     'Node.js',
-    'PHP',
-    'CodeIgniter',
+    'React',
+    'Java',
+    'Express',
+    'MongoDB',
+    'PostgreSQL',
     'MySQL',
+    'Redis',
     'Git',
+    'DSA',
   ];
+>>>>>>> Stashed changes
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -143,19 +150,39 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Seraj, a software engineer based in Bhopal, IN.</p>
+<<<<<<< Updated upstream
+            <p>
+              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
+              interest in web development started back in 2012 when I decided to try editing custom
+              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
+              about HTML &amp; CSS!
+=======
+            <p>Hello! I'm Seraj, a Software Developer based in Bengaluru, IN.</p>
 
             <p>
               I enjoy creating things that live on the internet, whether that be web applications,
-              or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              or anything in between. My goal is to always build tools that increases productivity.
+>>>>>>> Stashed changes
             </p>
 
             <p>
-              Shortly after graduation from
-              <a href="https://www.corporatebpl.com/CIST/">
-                Corporate Institute of Science and Technology Bhopal
-              </a>
+              Fast-forward to today, and I’ve had the privilege of working at{' '}
+              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
+              <a href="https://starry.com/">a start-up</a>,{' '}
+              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
+              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
+              main focus these days is building accessible, inclusive products and digital
+              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
+              clients.
+            </p>
+
+            <p>
+              I also recently{' '}
+              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
+                launched a course
+              </a>{' '}
+              that covers everything you need to build a web app with the Spotify API using Node
+              &amp; React.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

@@ -1,6 +1,6 @@
 ---
 date: '2021-06-01'
-title: 'Associate Software Engineer'
+title: 'Software Developer'
 company: 'BasketHunt'
 location: 'Bhopal, IN'
 range: 'June 2021 - September 2022'

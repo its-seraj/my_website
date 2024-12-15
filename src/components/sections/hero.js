@@ -3,17 +3,18 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
-// import { email } from '@config';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
+  height: 100vh;
   padding: 0;
 
-  @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 10vh;
+  @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+    height: auto;
+    padding-top: var(--nav-height);
   }
 
   h1 {
@@ -29,7 +30,7 @@ const StyledHeroSection = styled.section`
   }
 
   h3 {
-    margin-top: 10px;
+    margin-top: 5px;
     color: var(--slate);
     line-height: 0.9;
   }
@@ -59,23 +60,36 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Seraj Khan.</h2>;
+<<<<<<< Updated upstream
+  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer based in Bhopal, IN specializing in building (and occasionally
-        designing) exceptional digital experiences.
+        I’m a software engineer specializing in building (and occasionally designing) exceptional
+        digital experiences. Currently, I’m focused on building accessible, human-centered products
+        at{' '}
+        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
+          Upstatement
+        </a>
+        .
       </p>
+=======
+  const two = <h2 className="big-heading">Seraj Khan.</h2>;
+  const three = <h3 className="big-heading">I design and develop solutions for the web.</h3>;
+  const four = (
+    <>
+      <p>I’m a Software Engineer @Bamboobox</p>
+>>>>>>> Stashed changes
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="mailto:serajkhan48522@gmail.com"
+      href="https://www.newline.co/courses/build-a-spotify-connected-app"
       target="_blank"
       rel="noreferrer">
-      Get in Touch
+      Check out my course!
     </a>
   );
 

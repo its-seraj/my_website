@@ -41,7 +41,7 @@ const StyledContactSection = styled.section`
   }
 `;
 
-const Contact = () => {
+const Progress = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -54,21 +54,12 @@ const Contact = () => {
   }, []);
 
   return (
-    <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+    <StyledContactSection id="progress" ref={revealContainer}>
+      <h2 className="numbered-heading overline">My Progress</h2>
 
-      <h2 className="title">Get In Touch</h2>
-
-      <p>
-      I’m currently exploring new opportunities and would love to connect! Whether you have a question, collaboration idea, 
-      or just want to chat, feel free to reach out. My inbox is always open, and I’ll do my best to respond!
-      </p>
-
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
+      <img style={{ filter: "none", height: "150px" }} src='https://leetcard.jacoblin.cool/its-seraj?theme=transparent&font=ABeeZee' />      
     </StyledContactSection>
   );
 };
 
-export default Contact;
+export default Progress;

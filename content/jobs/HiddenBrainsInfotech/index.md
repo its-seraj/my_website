@@ -1,6 +1,6 @@
 ---
 date: '2022-05-14'
-title: 'Software Development Intern'
+title: 'Software Developer Intern'
 company: 'Hidden Brains Infotech'
 location: 'Ahmedabad, IN'
 range: 'Jan 2022 - May 2022'
